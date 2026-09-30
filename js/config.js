@@ -5,7 +5,7 @@
 window.HALOGRAVE_CONFIG = {
   // Supabase → Project Settings → API (or "Connect")
   // Example: "https://abcdefghijklm.supabase.co"
-  SUPABASE_URL: "https://dqzuaaewlkczsjosvwhs.supabase.co/rest/v1/",
+  SUPABASE_URL: "https://dqzuaaewlkczsjosvwhs.supabase.co",
 
   // Supabase → Project Settings → API keys → the "anon" / "publishable" key
   // (This key is SAFE to put in front-end code. Never paste the "service_role" / secret key here.)
