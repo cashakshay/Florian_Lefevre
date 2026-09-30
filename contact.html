@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · Florian Lefèvre</title>
+<meta name="description" content="Write to the Lefèvre studio about orders, sizing, press or anything else.">
+<meta name="theme-color" content="#1a1816">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Contact · Florian Lefèvre">
+<meta property="og:description" content="Write to the Lefèvre studio about orders, sizing, press or anything else.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Florian Lefèvre home"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M39.18 14.59 A17 17 0 1 1 24.82 14.59" fill="none" stroke="currentColor" stroke-width="3.4"/><path d="M32 2 L35.2 7.5 L32 13 L28.8 7.5 Z" fill="currentColor"/><path d="M30.9 13 L33.1 13 L32.6 55 L32 62 L31.4 55 Z" fill="currentColor"/></svg><span><span class="brand-first">Florian </span>Lefèvre</span></a>
+  <nav class="nav" id="site-nav" aria-label="Main">
+    <a href="shop.html">Collection</a>
+    <a href="index.html#process">The process</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a href="account.html" data-account-link>Sign in</a>
+  </nav>
+  <a class="bag" href="cart.html">Bag<span data-bag-count>0</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+</header>
+<canvas id="fx" class="fx-fixed" aria-hidden="true"></canvas>
+
+<main id="main" class="page">
+  <div class="page-head">
+    <h1 class="display">Write to<br>the studio</h1>
+    <p class="lede">Questions about sizing, an order, or a piece you want made? Send a message and a person at the studio will answer.</p>
+  </div>
+
+  <div class="contact-layout">
+    <form class="form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required data-label="your name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required data-label="your email">
+      </div>
+      <div class="field">
+        <label for="topic">What is it about?</label>
+        <select id="topic" name="topic">
+          <option>An order</option>
+          <option>Sizing and fit</option>
+          <option>A custom piece</option>
+          <option>Press</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required data-label="a message"></textarea>
+      </div>
+      <input type="text" name="_gotcha" class="gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New message from the Florian Lefèvre website">
+      <div>
+        <button class="btn btn--solid" type="submit">Send message</button>
+      </div>
+      <p class="status" id="contact-status" role="alert"></p>
+    </form>
+
+    <aside class="contact-aside" aria-label="Studio details">
+      <div>
+        <h2>Replies</h2>
+        <p>Within two working days, Monday to Friday.</p>
+      </div>
+      <div>
+        <h2>Orders</h2>
+        <p>Every piece is made to order and ships in three to five weeks. Include your order number if you have one.</p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <p>Appointments only. Ask in your message and we'll send a time.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="footer-mark">Lefèvre</p>
+        <p>Florian Lefèvre. Relics for the living, made to order in small numbers.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Shop</p>
+        <ul class="footer-links">
+          <li><a href="shop.html">Collection 00</a></li>
+          <li><a href="cart.html">Your bag</a></li>
+          <li><a href="account.html">Your account</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">House</p>
+        <ul class="footer-links">
+          <li><a href="index.html#process">How a piece is made</a></li>
+          <li><a href="contact.html">Contact the studio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✏️ EDIT THESE THREE LINES with your real numbers before you turn it in -->
+    <div class="build-notes">
+      <p>I built this site in <strong>__ hours</strong></p>
+      <p>I used <strong>Claude (Anthropic), HTML, CSS, JavaScript, Supabase and Formspree</strong> to build this site</p>
+      <p>It took me <strong>__ prompts</strong> to create this site</p>
+    </div>
+
+    <p class="legal">© 2026 Florian Lefèvre. Florian Lefèvre is a fictional designer label created for a class project; no real products are sold.</p>
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/vendor/supabase.js"></script>
+<script src="js/store.js"></script>
+<script src="js/photo-data.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
